@@ -4,3 +4,8 @@ npm install webpack-cli@4.10.0 --save-dev
 then
 
 npm start
+
+
+// to fix time in ubuntu
+
+sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
